@@ -1,15 +1,25 @@
 [tool.poetry]
-name = "personal-assistant"
-version = "0.1.0"
-description = "Personal Assistant CLI app"
+name = "personal_assistant"
+version = "1.0.0"
+description = "Персональний помічник"
 authors = ["Ваше ім'я <email@example.com>"]
-readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pickleshare = "*"
-regex = "*"
+django = "^4.2"
+djangorestframework = "^3.14"
+fastapi = "^0.110.0"
+uvicorn = "^0.27"
+sqlalchemy = "^2.0"
+alembic = "^1.12"
+psycopg2-binary = "^2.9"
+motor = "^3.3"
+pymongo = "^4.6"
+pydantic = "^2.5"
+python-dotenv = "^1.0"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.dev-dependencies]
+pytest = "^8.0"
+pytest-cov = "^4.1"
+
